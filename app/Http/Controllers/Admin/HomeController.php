@@ -31,11 +31,8 @@ class HomeController extends Controller
         if (isset($menuHome) && isset($menuHome->menu->router_link)) {
             return redirect()->route($menuHome->menu->router_link);
         }
-        if (in_array($user->role->code, ['admin'])) {
+        if (in_array($user->role->code, ['sysadmin', 'admin'])) {
             return redirect()->route('admin/protectedareas');
-        }
-        if (in_array($user->role->code, ['sysadmin'])) {
-            return redirect()->route('users');
         }
         if (in_array($user->role->code, ['ND2019'])) {
             return redirect()->route('user.profile');

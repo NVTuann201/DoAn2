@@ -22,6 +22,10 @@ class RedirectIfAuthenticated
             if(Auth::user()->role_id == $getId->id){
                 return redirect('user/profile');
             }
+            $getId1 = \App\Role::query()->select('id')->whereCode('admin')->first();
+            if(Auth::user()->role_id == $getId1->id){
+                return redirect('profile');
+            }
             return redirect('users');
         }
 
