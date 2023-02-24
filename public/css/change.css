@@ -1,0 +1,89 @@
+.card1{
+    background-color: white;
+    box-shadow: 0 4px 5px 0 #43915e;
+    height: 220px;
+    margin-bottom: 15px
+}
+
+.card1 a{
+    position: relative;
+}
+
+.card-title p{
+    color:#000000a8;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.card-title:hover{
+cursor: pointer;
+color:#000000a8;
+}
+
+.card1 .card-body{
+margin: 15px 2px 0px 8px;
+padding-bottom: 1px;
+}
+
+.post-content .card-body:hover{
+cursor: auto;
+}
+.card1 .card-text{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card1:hover{
+    box-shadow: 0 3px 8px 0 grey
+}
+
+.post-content{
+    margin: 25px 0;
+}
+
+.card1 img{
+    width: 80%;
+}
+
+.card1 span{
+    position: absolute;
+    bottom: -35px;
+    right: -46px;
+    background: rgba(0,0,0,.33);
+    padding: 0 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px
+}
+
+@media only screen and (max-width:1024px){
+  .card1 span{
+      bottom: -35px;
+      right: -42px
+  }
+}
+
+@media only screen and (max-width:768px){
+    .card1 span{
+        bottom: -45px;
+        right: -50px;
+        font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width:425px){
+      .card1 span{
+        bottom: -50px;
+        right: -47px;
+        font-size: 16px;
+      }
+  }
+
+.emptyInfomation{
+    background-color: #f7f7f9
+}
+.emptyInfomation h5{
+    text-align: center;
+}

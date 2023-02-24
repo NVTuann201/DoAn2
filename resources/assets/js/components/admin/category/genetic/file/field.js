@@ -1,0 +1,96 @@
+export const fields_Image = [
+  {
+    label: "Định danh",
+    type: "text",
+    required: true,
+    field: "identifier",
+    class: "col-12",
+  },
+  {
+    label: "Tham khảo",
+    type: "text",
+    required: true,
+    field: "references",
+    class: "col-12",
+  },
+  {
+    label: "Tiêu đề",
+    type: "text",
+    field: "title",
+    class: "col-12",
+  },
+  {
+    label: "Mô tả",
+    type: "text",
+    field: "description",
+    class: "col-12",
+  },
+  {
+    label: "Kinh độ",
+    type: "text",
+    field: "longitude",
+    class: "col-12",
+  },
+  {
+    label: "Vĩ độ",
+    type: "text",
+    field: "latitude",
+    class: "col-12",
+  },
+  {
+    label: "Thời gian tạo",
+    type: "date",
+    field: "created",
+    class: "col-12",
+  },
+  {
+    label: "Tác giả",
+    type: "text",
+    field: "creator",
+    class: "col-12",
+  },
+  {
+    label: "Người đóng góp",
+    type: "text",
+    field: "contributor",
+    class: "col-12",
+  },
+  {
+    label: "Nhà xuất bản",
+    type: "text",
+    field: "publisher",
+    class: "col-12",
+  },
+  {
+    label: "Độc giả/người dùng",
+    type: "text",
+    field: "audience",
+    class: "col-12",
+  },
+  {
+    label: "Giấy phép",
+    type: "text",
+    field: "license",
+    class: "col-12",
+  },
+  {
+    label: "Chủ sở hữu",
+    type: "text",
+    field: "rights_holder",
+    class: "col-12",
+  },
+  {
+    label: "Liên quan khác",
+    type: "text",
+    field: "other_relation",
+    class: "col-12",
+  },
+  {
+    label: "Đã công bố",
+    type: "boolean",
+    field: "public",
+    required: true,
+    class: "col-12",
+  },
+];
+

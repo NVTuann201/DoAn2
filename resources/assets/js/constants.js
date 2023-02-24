@@ -1,0 +1,1 @@
+export const MIN_RANGE_YEAR = 1990;

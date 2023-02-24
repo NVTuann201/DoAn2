@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "plugins": ["jsdoc"],
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:jsdoc/recommended"
+  ],
+  "ignorePatterns": ["^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$"],
+  "rules": {
+    "no-unused-vars": "off",
+    "vue/valid-v-slot": 0,
+    "jsdoc/require-jsdoc": "off",
+    "jsdoc/no-undefined-types": "off",
+    "jsdoc/valid-types": "off",
+    "jsdoc/require-param-description": "off",
+    "jsdoc/require-returns-description": "off"
+  }
+}
