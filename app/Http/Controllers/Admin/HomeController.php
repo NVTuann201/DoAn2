@@ -32,7 +32,7 @@ class HomeController extends Controller
             return redirect()->route($menuHome->menu->router_link);
         }
         if (in_array($user->role->code, ['sysadmin', 'admin'])) {
-            return redirect()->route('admin/protectedareas');
+            return redirect()->route('profile');
         }
         if (in_array($user->role->code, ['ND2019'])) {
             return redirect()->route('user.profile');
