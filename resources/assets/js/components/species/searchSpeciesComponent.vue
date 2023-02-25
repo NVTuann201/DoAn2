@@ -6,15 +6,15 @@
     <template v-slot:extra-filter>
       <div class="filter-group ng-isolate-scope">
 
-        <div style="display: flex; justify-content: center; padding-top: 10px">
+        <!-- <div style="display: flex; justify-content: center; padding-top: 10px">
           <button style="height: 30px; width: 100px; background: green; color: white" @click="download()">
             <span class="gb-icon-file-download"></span>
             Tải dữ liệu</button>
-        </div>
+        </div> -->
 
-        <filter-search :title="$t('nbds_lang.submenu_dataset')" :route_suggest="gettopdatasetfortaxon"
+        <!-- <filter-search :title="$t('nbds_lang.submenu_dataset')" :route_suggest="gettopdatasetfortaxon"
           field_count="count" field_name="title" :route_search="asyncdatasetresources" v-model="datasetFilter">
-        </filter-search>
+        </filter-search> -->
         <filter-choose title="Danh mục phân loại Hà Nội" v-model="rankFilterHaNoi" :options="rankHnOptions">
           <template v-slot:name-filter="{ item }">
             {{ item.name | rankName }}
@@ -86,12 +86,12 @@
           </template>
         </filter-choose>
 
-        <filter-choose :title="$t('nbds_lang.species_endangered')" v-model="filterEndangered"
+        <!-- <filter-choose :title="$t('nbds_lang.species_endangered')" v-model="filterEndangered"
           :options="optionEndangered">
           <template v-slot:name-filter="{ item }">
             {{ item.name }}
           </template>
-        </filter-choose>
+        </filter-choose> -->
 
         <!-- <filter-choose
           :title="$t('nbds_lang.species_source')"
@@ -514,14 +514,14 @@ export default {
           }, {})
         );
       }
-      
+
       try {
         if (this.isExport) {
           let response = await axios.request({
             url:  env.endpointhttp + "searchspecies",
             params: params,
             responseType: "blob",
-          });            
+          });
           this.loading = false;
           this.isExport = false;
           return response
@@ -538,7 +538,7 @@ export default {
           $(".stickyNav").addClass("hasOffset");
           this.isExport = false;
         }
-        
+
       } catch (error) {
         $(".stickyNav").addClass("hasOffset");
         this.loading = false;

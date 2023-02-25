@@ -5,7 +5,7 @@
 
 <head>
 
-    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội Đa Dạng Sinh Học Thành phố Hà Nội</title>
+    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội</title>
 
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

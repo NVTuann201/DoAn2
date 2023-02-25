@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội Đa Dạng Sinh Học Thành phố Hà Nội</title>
+  <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội</title>
   <!-- bootstrap css -->
   <link href="{{ asset('css/dist/bootstrap.min.css') }}" rel="stylesheet">
   <!-- animation CSS -->

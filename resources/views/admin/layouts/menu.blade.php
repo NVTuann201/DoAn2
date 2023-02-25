@@ -1,7 +1,7 @@
 @foreach ($menus->tree as $menu)
 @if (count($menu->children) > 0)
-{{-- <li> --}}
-    {{-- @if(Route::has($menu->router_link))
+<li>
+    @if(Route::has($menu->router_link))
     <a href="{{route($menu->router_link)}}"><i class="m-r-10 {{$menu->fa_icon}}"
             class="{{ ($menu->router_link == Route::currentRouteName()) ? 'active' : '' }}"></i>
         <span class="hide-menu">{{$menu->name}}</span>
@@ -15,7 +15,7 @@
         <span class="pull-right-container">
             <i class="fas fa arrow"></i>
         </span>
-    </a> --}}
+    </a>
     <ul class="nav nav-second-level">
         @foreach ($menu->children as $menu_detail)
         @if (count($menu_detail->children) > 0)
@@ -72,12 +72,13 @@
         @endif
         @endforeach
     </ul>
-{{-- </li> --}}
+</li>
 @elseif (Route::has($menu->router_link))
 <li>
     <a href="{{route($menu->router_link)}}"
-        class="{{ ($menu->router_link == Route::currentRouteName()) ? 'active' : '' }}"><i
-            class="fa {{$menu->fa_icon}} "></i><span>{{$menu->name}}</span>
+        class="{{ ($menu->router_link == Route::currentRouteName()) ? 'active' : '' }}">
+        <i class="m-r-10 fa {{$menu->fa_icon}} "></i>
+        <span>{{$menu->name}}</span>
     </a>
 </li>
 @else

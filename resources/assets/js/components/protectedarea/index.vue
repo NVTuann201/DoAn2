@@ -43,14 +43,14 @@
           :class="{ isActive: filter_desig_type === 'National' }">
           <a>{{ $t("nbds_lang.national") }}</a>
         </li>
-        <li class="tab cursor-pointer" @click="clickTab('Map')" :class="{ isActive: isShowMap }">
+        <!-- <li class="tab cursor-pointer" @click="clickTab('Map')" :class="{ isActive: isShowMap }">
           <a>{{ $t("nbds_lang.map") }}</a>
         </li>
         <li class="tab cursor-pointer">
           <a class="download">
             <download-protectedarea :value="fullData" v-if="!loading && user"></download-protectedarea>
           </a>
-        </li>
+        </li> -->
       </ul>
     </template>
     <template v-slot:other-tab>

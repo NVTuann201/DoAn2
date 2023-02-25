@@ -23,11 +23,11 @@
         </div>
         <ul class="nav" id="side-menu">
             @include('admin.layouts.menu')
-            <li><a href="#" class="waves-effect" onclick="event.preventDefault();
+            {{-- <li><a href="#" class="waves-effect" onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">&nbsp;{{__('label.logout')}}</span></a></li>
             <li class="devider"></li>
-            <!--<li><a href="#" class="waves-effect"><i class="far fa-circle text-inverse"></i> <span class="hide-menu">&nbsp;{{__('label.documentation')}}</span></a></li>
-            <li><a href="#" class="waves-effect"><i class="far fa-circle text-inverse"></i> <span class="hide-menu">&nbsp;{{__('label.faqs')}}</span></a></li>-->
+            <li><a href="#" class="waves-effect"><i class="far fa-circle text-inverse"></i> <span class="hide-menu">&nbsp;{{__('label.documentation')}}</span></a></li>
+            <li><a href="#" class="waves-effect"><i class="far fa-circle text-inverse"></i> <span class="hide-menu">&nbsp;{{__('label.faqs')}}</span></a></li> --}}
         </ul>
     </div>
 </div>

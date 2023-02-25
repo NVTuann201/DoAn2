@@ -1,6 +1,6 @@
 <template>
   <footer class="site-footer wrapper-horizontal-stripes">
-    <div class="horizontal-stripe light-background site-footer__upper">
+    <!-- <div class="horizontal-stripe light-background site-footer__upper">
       <div class="container--normal">
         <nav class="site-footer__menu">
           <div>
@@ -32,7 +32,7 @@
           ></a>
         </div>
       </div>
-    </div>
+    </div> -->
   </footer>
 </template>
 

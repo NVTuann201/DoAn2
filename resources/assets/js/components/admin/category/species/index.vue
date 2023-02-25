@@ -40,7 +40,7 @@
           <h3 class="uppercase" style="font-weight: normal">Danh mục loài</h3>
         </div>
         <a class="btn btn-info btn-rounded" href="/admin/species/add">Thêm mới</a>
-        <div class="m-t-10" style="font-size: 16px;">Nhập từ Excel</div>
+        <!-- <div class="m-t-10" style="font-size: 16px;">Nhập từ Excel</div>
         <div >
           <button type="button" class="btn btn-default float-right" @click="downloadTemplate()">
             Tải file mẫu
@@ -50,7 +50,7 @@
             <input type="file" id="file" ref="file" v-on:change="uploadFile()"
               accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
           </button>
-        </div>
+        </div> -->
 
         <div class="clearfix"></div>
         <div class="scrollable">

@@ -7,14 +7,14 @@
                     <img src="{{ URL::to('/') . '/images/logo/admin/logo.png'}}" alt="home" class="light-logo" style="height: 80%;" />
                 </b>
                 <i class="fa fa-home"></i>
-                <span>Trang chủ</span>
+                <span><strong>Trang chủ</strong></span>
             </a>
         </div>
         <!-- /Logo -->
         <!-- Search input and Toggle icon -->
         <ul class="nav navbar-top-links navbar-left">
-            <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a>
-            </li>
+            {{-- <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a>
+            </li> --}}
             <li class="dropdown" style="display: none">
                 <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"> <i class="mdi mdi-gmail"></i>
                     <div class="notify"><span class="heartbit"></span> <span class="point"></span></div>

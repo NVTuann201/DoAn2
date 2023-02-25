@@ -47,7 +47,7 @@
         <b-card no-body>
           <b-card-header class="p-1" role="tab">
             <b-button v-b-toggle.accordion-3 variant="info">
-              <b>3. Thông tin bổ xung về phân loại học</b>
+              <b>3. Thông tin bổ sung về phân loại học</b>
             </b-button>
           </b-card-header>
           <b-collapse visible id="accordion-3">
@@ -107,7 +107,7 @@
           </b-collapse>
         </b-card>
         <br />
-        <b-card no-body>
+        <!-- <b-card no-body>
           <b-card-header class="p-1" role="tab">
             <b-button v-b-toggle.accordion-8 variant="info">
               <b>7. Thông tin địa điểm</b>
@@ -154,11 +154,11 @@
             />
           </b-collapse>
         </b-card>
-        <br />
+        <br /> -->
         <b-card no-body>
           <b-card-header class="p-1" role="tab">
             <b-button v-b-toggle.accordion-4 variant="info">
-              <b>10. Hình ảnh loài</b>
+              <b>7. Hình ảnh loài</b>
             </b-button>
           </b-card-header>
           <b-collapse visible id="accordion-4">

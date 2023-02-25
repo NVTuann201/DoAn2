@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội Đa Dạng Sinh Học Thành phố Hà Nội</title>
+    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội</title>
     <!-- bootstrap css -->
     <link href="{{ asset('css/dist/bootstrap.min.css') }}" rel="stylesheet">
     <!-- animation CSS -->
@@ -72,8 +72,8 @@
                             @endif
                             <div class="form-group m-t-20 {{ $errors->has('username') ? ' has-error' : '' }}">
                                 <div class="col-xs-12">
-                                    <label>{{__('page.login.username')}}</label>
-                                    <input class="form-control" type="text" placeholder="Username" name="username"
+                                    <label>Tài khoản</label>
+                                    <input class="form-control" type="text" placeholder="Tài khoản" name="username"
                                         value="{{ old('username') }}" required autofocus>
                                     @if ($errors->has('username'))
                                     <span class="help-block">
@@ -94,7 +94,7 @@
                                     @endif
                                 </div>
                             </div>
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="col-md-12">
                                     <div class="checkbox checkbox-info pull-left p-t-0">
                                         <input id="checkbox-signup" type="checkbox">
@@ -104,7 +104,7 @@
                                         class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i>
                                         &nbsp;{{__('page.login.forgot_password')}}</a>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="form-group text-center m-t-20">
                                 <div class="col-xs-12">
                                     <button
@@ -112,7 +112,7 @@
                                         style="background: linear-gradient(#408c5b, #43915e); margin-bottom: 5px"
                                         type="submit">{{__('page.login.login_button')}}</button>
                                 </div>
-                                <div class="col-xs-12">
+                                {{-- <div class="col-xs-12">
                                     <a href="login/redirect/facebook"
                                         class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
                                         style="background: #4267b2; border: 1px solid #4267b2; margin-bottom: 5px; "
@@ -126,14 +126,14 @@
                                         type="submit"><img style="width: 5.5%; margin-right: 10px"
                                             src="https://img.icons8.com/color/48/000000/google-logo.png">{{__('Đăng nhập
                                         bằng Google')}}</a>
-                                </div>
+                                </div> --}}
                             </div>
-                            <div class="form-group m-b-0">
+                            {{-- <div class="form-group m-b-0">
                                 <div class="col-sm-12 text-center">
                                     <p>{{__('page.login.do_not_have_an_account')}} <a href="{{route('register')}}"
                                             class="text-primary m-l-5"><b>{{__('page.login.sign_up')}}</b></a></p>
                                 </div>
-                            </div>
+                            </div> --}}
                         </form>
                         <form class="form-horizontal" id="recoverform" method="POST"
                             action="{{ route('password.email') }}">

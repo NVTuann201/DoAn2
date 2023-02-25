@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội Đa Dạng Sinh Học Thành phố Hà Nội</title>
+    <title>Hệ thống Quản lý Đa Dạng Sinh Học Hà Nội</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- bootstrap css -->
@@ -78,7 +78,7 @@
         <div id="page-wrapper">
             @yield('content')
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> <strong>Copyright &copy; {{date("Y")}} <a href="http://sotnmt.hanoi.gov.vn/" target="_blank">Chi cục Bảo vệ môi trường Hà Nội  (Sở TN&MT Hà Nội)</a>.</strong></footer>
+            {{-- <footer class="footer text-center"> <strong>Copyright &copy; {{date("Y")}} <a href="http://sotnmt.hanoi.gov.vn/" target="_blank">Chi cục Bảo vệ môi trường Hà Nội  (Sở TN&MT Hà Nội)</a>.</strong></footer> --}}
         </div>
         <!-- ============================================================== -->
         <!-- End Page Content -->
